@@ -41,7 +41,7 @@ When initialized, the node of a binary tree will contain the [1] tree node that 
 
 As so, the constructors of binary tree node usually as follows 
 ``` Java
-class Treenode {
+class TreeNode {
 	private int data;
 	private TreenNode left;
 	private TreeNode right;
@@ -102,8 +102,8 @@ The following code allows to traversal through different ways
 ``` Java
 class BinaryTree {
 	
-	private Treenode root;
-	private class Treenode{
+	private TreeNode root;
+	private class TreeNode{
 		<....>
 	}
 	
@@ -111,7 +111,7 @@ class BinaryTree {
 		print(root);
 	}
 	
-	public void print(Treenote current) {
+	public void print(TreeNode current) {
 		if (current == null) {
 			return;
 		}
@@ -188,14 +188,17 @@ public class BinaryTree {
 	private TreeNode root;
 	<...>
 	class TreeNode { <...> }
+	public int size() {
+		size(root);
+	}
 	
-	private void size (TreenNode current) {
+	private int size (TreenNode root) {
 		 if (current == null) {
-		 return;
+		 	return 0;
 		 }
 		 
-		 int left = size(current.left); // Traversing post-order
-		 int right = size(ccurent.right);
+		 int left = size(root.left); // Traversing post-order
+		 int right = size(root.right);
 		 return 1 + left + right;  // accounting the root by +1
 	}
 }
@@ -212,13 +215,13 @@ public class BinaryTree {
 		return height(root) - 1;
 	}
 	
-	private int height(TreeNode current) {
+	private int height(TreeNode root) {
 		if (current == null) {
 			return 0;
 		}
 		
-		int left = height(current.left);
-		int right = height(current.right);
+		int left = height(root.left);
+		int right = height(root.right);
 		
 		// Return the height 
 		if (left < right) {
