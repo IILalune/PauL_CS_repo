@@ -6,7 +6,7 @@
 [<8/2026>]
 ## Binary Tree node
 
-Binary tree, like array list, by itself is a node. The on distinction is that it have 2 fields that pointed to two different nod of its kind. It seem the confusing part about the code is of which the class you declare the field is also in the same constructor. This is intuitively harder early on when trying to visualize the node. The problem is of which the translation of those intention within the code into a visualize object of which abstractive. The code for binary tree often as follows
+Binary tree, like linked list, by itself is a node. The on distinction is that it have 2 fields that pointed to two different nod of its kind. It seem the confusing part about the code is of which the class you declare the field is also in the same constructor. This is intuitively harder early on when trying to visualize the node. The problem is of which the translation of those intention within the code into a visualize object of which abstractive. The code for binary tree often as follows
 
 ``` Java
 class TreeNode {
