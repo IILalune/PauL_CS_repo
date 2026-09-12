@@ -1,5 +1,3 @@
-Collective personal science course works
+A collection of personal science course works by PauL
 
-A collection of programs, methods and notes by PauL
-
-Open-source works with restricted distribution. Please only use for self-guide and referennces, not for institutional use.  
+Open-source works with restricted distribution. Please only use for the purpose of self-guide and referennces, not for institutional use.  
